@@ -1,7 +1,7 @@
 FROM debian:latest
-MAINTAINER Marc Rooding <admin@webresource.nl>
+MAINTAINER EragonBY <eragonby@gmail.com>
 
-RUN apt-get update && apt-get install -y gnumeric curl
+RUN apt-get update && apt-get install -y --no-install-recommends gnumeric curl
 
 COPY ./ssconvert-xls-to-csv.sh /ssconvert-xls-to-csv.sh
 
