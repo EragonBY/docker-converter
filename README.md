@@ -14,10 +14,10 @@ data
 
 Start the docker image by running the following command where /path/to/folder is the path to the folder containing the in- and output folders:
 
-`docker run -v d:/data:/src eragonby/docker-convertor ARG1 ARG2` 
+`docker run -v d:/data:/data eragonby/docker-convertor ARG1 ARG2` 
 where ARG1 it's file name(in quotes) and ARG2 it's number of sheet that should be converted(sheet1 - 1, sheet2 - 2, etc). Example:
 
-	docker run -v d:/data:/src eragonby/docker-convertor 'test.xls' 1
+	docker run -v d:/data:/data eragonby/docker-convertor 'test.xls' 1
 
 ## Copyright
 
